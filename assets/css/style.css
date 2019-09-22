@@ -14,6 +14,7 @@
 }
 
 .d-flex,
+.text-img-row .center-wrap,
 .align-cm {
 	display: -webkit-flex !important;
 	display: -moz-flex !important;
@@ -52,6 +53,10 @@
   object-fit: contain;
   top: 0;
   left: 0;
+}
+
+.of-c img{
+  object-fit: cover !important;
 }
 
 a {
@@ -337,4 +342,60 @@ p{
 
 .features{
 	padding-bottom: 130px;
+}
+
+.text-block,
+.img-block{
+	max-height: 450px;
+	height: 100%;
+}
+
+.text-block{
+	padding: 85px 85px 85px 210px;
+	color: white;
+	width: 100%
+}
+
+.img-block{
+	width: 50%;
+	height: auto;
+}
+
+.text-block__date{
+	padding-bottom: 20px;
+}
+
+.text-block__title{
+	font-family: "Gotham-Medium";
+	font-size: 25px;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+
+.text-img-row{
+	background-color: #222222;
+	max-height: 450px;
+}
+
+.text-img-row:nth-child(2n){
+	background-color: #f3f3f3;
+}
+
+.text-img-row .center-wrap {
+	padding: 0;
+	width: 50%;
+}
+
+.text-img-row:nth-child(2n)  {
+	flex-direction: row-reverse;
+}
+
+
+.text-img-row:nth-child(2n) .text-block,
+.text-img-row:nth-child(2n) .text-block__title,
+.text-img-row:nth-child(2n) .text-block__text,
+.text-img-row:nth-child(2n) .text-block__date,
+.text-img-row:nth-child(2n) .text-block{
+	color: #222222;
+	background-color: #f3f3f3;
 }
