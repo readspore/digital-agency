@@ -1,0 +1,244 @@
+/* нужно везде начало */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.d-none{
+	display: none !important;
+}
+
+.d-block{
+	display: block;
+}
+
+.d-flex,
+.align-cm {
+	display: -webkit-flex !important;
+	display: -moz-flex !important;
+	display: -ms-flex !important;
+	display: -o-flex !important;
+	display: flex !important;
+}
+
+.align-cm{
+  align-items: center;
+  justify-content: center;
+}
+
+.f-col{
+	flex-direction: column !important;
+}
+
+.is-processing{
+  opacity: 0.7;
+  cursor: progress;
+}
+
+.img-wrap-1{
+  position: relative;
+  width: 190px;
+}
+
+.img-wrap-1 > .img-wrap-2{
+  padding-bottom: 75%;
+}
+
+.img-wrap-1 > .img-wrap-2  img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  top: 0;
+  left: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+/* нужно везде конец */
+
+@font-face {
+	font-family: "Open Sans Bold"; 
+	src: url("../fonts/Open_Sans_Bold.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: bold; 
+} 
+
+@font-face {
+	font-family: "OpenSans-Regular"; 
+	src: url("../fonts/OpenSans-Regular.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: bold; 
+} 
+
+
+@font-face {
+	font-family: "Gotham-Bold"; 
+	src: url("../fonts/Gotham-Bold.otf") format("truetype"); 
+	font-style: normal; 
+	font-weight: bold; 
+} 
+
+@font-face {
+	font-family: "Gotham-Medium"; 
+	src: url("../fonts/Gotham-Medium.otf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+} 
+
+.ff-osdb{
+	font-family: "Open Sans Bold"; 
+}
+
+.center-wrap{
+	max-width: 1200px;
+	padding: 0 15px;
+	position: relative;
+	margin: auto;
+}
+
+.top-header__rect-main{
+	position: relative;
+}
+
+.top-header__rect-bg{
+	background-color: #c4c4c4;
+	position: absolute;
+	left: 15px;
+	top: 10px;
+}
+
+.top-header__text {
+	background-color: rgb(17, 116, 158);
+	z-index: 2;
+  position: inherit;
+}
+
+.top-header__text,
+.top-header__rect-bg {
+	height: 67px;
+	width: 67px;
+}
+
+.main-screen{
+  background-image: url(../img/bg-mains-screen.png);
+  padding-top: 20px;
+  background-repeat: no-repeat;
+  max-height: 100vh;
+}
+
+.top-header__link{
+	color: #fff;
+	position: relative;
+	margin-right: 55px;
+}
+
+.top-header__link-active::after {
+  content: "";
+  height: 10px;
+  width: 100%;
+  display: inline-block;
+  background-color: #11749e;
+  position: absolute;
+  top: 49px;
+  left: 0;
+}
+
+.top-header__nav{
+	width: fit-content;
+}
+
+.top-header__right{
+  display: flex;
+  margin-left: auto;
+}
+
+.top-header__social-item{
+	margin: 0 10px;
+}
+
+.top-header{
+	border-bottom: 1px solid #7f7f7d;
+}
+
+.top-header__left{
+	margin-bottom: 30px;
+}
+
+.ms-content{
+	padding-top: 15%;
+}
+
+.ms-content__main-title h1{
+	margin: 0;
+  font-size: 152.54;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  font-family: "Gotham-Bold";
+  letter-spacing: -6.5px;
+  padding-right: 10px;
+}
+
+.ms-content__sub-title h2{
+  color: #11749e;
+  font-family: "Gotham-Medium";
+  font-size: 24.8px;
+  line-height: 51.2px;
+  letter-spacing: 18px;
+  padding-left: 10px;
+  padding-bottom: 100px;
+}
+
+.ms-content-more__text{
+	color: #ffffff;
+	font-family: "OpenSans-Regular"; 
+	font-size: 13px;
+	padding-bottom: 25px;
+}
+
+.ms-content-more{
+	flex-direction: column;
+}
+
+
+.ms-content-more__btn {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  border: 1px solid;
+  color: #f5f5f5;
+  border-radius: 50%;
+  position: relative;
+}
+
+.ms-content-more__btn::after {
+    content: "";
+    width: 17px;
+    height: 3px;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 50%;
+    transform: rotate(37deg);
+    left: calc(50% - 15px);
+}
+
+.ms-content-more__btn::before {
+		content: "";
+    width: 18px;
+    height: 3px;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 50%;
+    transform: rotate(137deg);
+    left: calc(50% - 3px);
+}
+
+.ms-content-more{
+	padding-bottom: 110px;
+}
