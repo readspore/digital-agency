@@ -92,11 +92,26 @@ li{
 	font-weight: normal; 
 } 
 
+@font-face {
+	font-family: "Gotham-Book"; 
+	src: url("../fonts/Gotham-Book.otf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+} 
+
+@font-face {
+	font-family: "Roboto-Bold-Condensed"; 
+	src: url("../fonts/Roboto-Bold-Condensed.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: bold; 
+} 
+
 .ff-osdb{
 	font-family: "Open Sans Bold"; 
 }
 
 .center-wrap{
+	width: 100%;
 	max-width: 1200px;
 	padding: 0 15px;
 	position: relative;
@@ -131,6 +146,8 @@ li{
   padding-top: 20px;
   background-repeat: no-repeat;
   max-height: 100vh;
+  background-position: center;
+  background-size: cover;
 }
 
 .top-header__link{
@@ -172,7 +189,7 @@ li{
 }
 
 .ms-content{
-	padding-top: 15%;
+	/*padding-top: 15%;*/
 }
 
 .ms-content__main-title h1{
@@ -204,8 +221,13 @@ li{
 
 .ms-content-more{
 	flex-direction: column;
+  bottom: 50px;
+  margin-bottom: 104px;
 }
 
+.white-space_274px{
+	height: 119px;
+}
 
 .ms-content-more__btn {
   width: 65px;
@@ -239,6 +261,80 @@ li{
     left: calc(50% - 3px);
 }
 
-.ms-content-more{
-	padding-bottom: 110px;
+h2{
+	font-size: 37.6px;
+	line-height: 45px;
+	font-family: "Gotham-Medium";
+}
+
+h3{
+	font-family: "Gotham-Medium";
+	font-size: 18px;
+	line-height: 36px;
+}
+
+p{
+	font-family: "Gotham-Book";
+	font-size: 15px;
+	line-height: 24px;
+}
+
+.section_feature{
+	background-color: #11749e;
+	padding-top: 100px;
+}
+
+.section-title{
+	font-family: "Gotham-Medium"; 
+  text-transform: uppercase;
+	height: 230px;
+}
+
+.section-title__text{
+	position: absolute;
+	z-index: 2;
+	color: #fff;
+}
+
+.section-title__single-letter{
+	font-family: "Roboto-Bold-Condensed";
+	font-size: 247px;
+	line-height: 210px;
+	z-index: 1;
+  left: 50%;
+  transform: translatex(-50%);
+  position: absolute;
+}
+
+.section-title_blue{
+	color: #5993b2;
+}
+
+.feature__wrap{
+	max-width: 540px;
+	width: 100%;
+	color: #fff;
+}
+
+.feature__text,
+.feature__title,
+.feature__img{
+	text-align: center;
+}
+
+.feature__img{
+	margin: auto;
+	margin-bottom: 24px;
+	height: 135px;
+	width: 140px;
+	border-radius: 50%;
+	background-color: #2e85aa;
+}
+
+.feature__text{
+	margin-bottom: 35px;
+}
+
+.features{
+	padding-bottom: 130px;
 }
