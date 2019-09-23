@@ -493,7 +493,7 @@ p{
 	background-image: url(../img/aw-bg_2.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
-	background-position: cover;
+	background-size: cover;
 	color: #ffffff;
 	padding: 70px 0;
 }
@@ -694,7 +694,7 @@ div textarea{
 }
 
 
-@media (max-width: 1200px){
+@media screen and (max-width: 1200px){
 	.blog-wrap,
 	.features,
 	.team-wrap{
@@ -727,11 +727,10 @@ div textarea{
 	.blog__title{
     margin-top: -30%;
 	}
-
 }
   
 
-@media (max-width: 800px){
+@media screen and (max-width: 1000px){
 	.section_feature{
     padding-top: 20px;
 	}
@@ -748,86 +747,145 @@ div textarea{
 	.section-aour-team {
     padding-bottom: 50px;
 	}	
+	.ms-content{
+		/*justify-content: inherit;*/
+	}
+	p {
+    font-size: 16px;
+	}
 }
 
-@media (max-width: 426px){
-.ms-content__main-title h1{
-		font-size: 166.54px;
+
+@media screen and (max-width: 430px){
+	h2{
+		font-size: 25.6px;
+	}
+	h3 {
+		font-size: 32px;
+	}
+	p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 27px;
+	}
+	.blog__title {
+			margin-top: -92%;
+	}
+	.ms-content__main-title h1{
+		font-size: 77.54px;
 	}
 	.ms-content__sub-title h2 {
-	  font-size: 32.8px;
-	  letter-spacing: 13px;
+		font-size: 32.8px;
+		letter-spacing: 13px;
+	}
+	.section-desc {
+	    margin-bottom: 0px;
 	}
 	.ms-content-more__text{
-    font-size: 35px;
+		font-size: 35px;
 	}
 	.ms-content-more__btn {
-    width: 130px;
-    height: 130px;
-  }
-	.blog__item, .feature__wrap, .team-member {
-    margin: auto;
-    width: 100%;
-    max-width: 80%;
+		width: 80px;
+		height: 80px;
 	}
-.feature__text,
-.feature__title,
-.feature__img{
-	margin-bottom: 20px;
-}
-h3 {
-    font-size: 32px;
-}
-p {
-    font-size: 29px;
-    letter-spacing: 1.5px;
-    line-height: 37px;
-}
-.text-img-row{
-    max-height: inherit;
-    flex-wrap: wrap;
-}
-.text-img-row .center-wrap {
-    padding: 0;
-    width: 95%;
-}
-.img-block {
-    width: 100%;
-    margin: auto;
-}
-.text-block__date {
-    font-size: 35px;
-}
-.text-block__title {
-    font-size: 33px;
-    padding-bottom: 10px;
-}
-.text-block, .img-block {
-    max-height: none;
-}
-.blog__item .img-wrap-1 {
-    margin-bottom: 220px;
-}
-.blog__item .img-wrap-1 {
-     max-width: none; 
-}
-.blog__item .img-wrap-1 {
-    width: 350px;
-}
-.blue-blocks-wrapper{
-	flex-direction: column;
-}
-.bb-single {
-	        margin: 0 auto 60px;
-	flex-direction: column;
-}
-.bb-single__icon {
-     margin-right: 0; 
-    margin-bottom: 20px;
-}
-.section-about-work .center-wrap {
-	    flex-direction: column-reverse;
-}
-
-
+	.blog__item, .feature__wrap, .team-member {
+		margin: auto;
+		width: 100%;
+		max-width: 80%;
+	}
+	.feature__text,
+	.feature__title,
+	.feature__img{
+		margin-bottom: 20px;
+	}
+	.text-img-row{
+		max-height: inherit;
+		flex-wrap: wrap;
+	}
+	.text-img-row .center-wrap {
+		padding: 0;
+		width: 95%;
+	}
+	.img-block {
+		width: 100%;
+		margin: auto;
+	}
+	.text-block__date {
+		font-size: 35px;
+	}
+	.text-block__title {
+		font-size: 33px;
+		padding-bottom: 10px;
+	}
+	.text-block, .img-block {
+		max-height: none;
+	}
+	.blog__item .img-wrap-1 {
+		margin-bottom: 220px;
+	}
+	.blog__item .img-wrap-1 {
+		max-width: none; 
+	}
+	.blog__item .img-wrap-1 {
+		width: 350px;
+	}
+	.blue-blocks-wrapper{
+		flex-direction: column;
+	}
+	.bb-single {
+		margin: 0 auto 60px;
+		flex-direction: column;
+	}
+	.bb-single__icon {
+		margin-right: 0; 
+		margin-bottom: 20px;
+	}
+	.section-about-work .center-wrap {
+		flex-direction: column-reverse;
+	}
+	.section-about-work{
+		padding: 0;
+	}
+	.section-about-work .center-wrap{
+		padding: 0;
+	}
+	.aw-img{
+		position: relative;
+		top: 50px;
+	}
+	.aw-content{
+		padding: 0 15px;
+	}
+	.aw-content__title{
+		position: relative;
+		top: 70px;
+	}
+	.aw-content__content{
+		position: relative;
+		top: 40px;
+	}
+	.aw-content ul{
+		margin-bottom: 40px;
+	}
+	.form__top-blocks{
+		flex-direction: column;
+	}
+	.form__top-blocks input{
+		width: 100%;
+		margin: 10px 0;
+		max-width: 100%;
+	}
+	div textarea{
+		margin-top: 10px;
+	}
+	.btn {
+		height: 47px;
+	}
+	.site-footer {
+    padding: 10px;
+    flex-direction: column;
+	}
+  .section-map .img-wrap-1{
+  	height: 155px;
+  }
 }
