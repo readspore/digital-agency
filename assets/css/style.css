@@ -529,3 +529,54 @@ li.item_blue-bg:nth-child(2){
 .aw-img{
 	margin: auto;
 }
+
+/*section - team*/
+.section-aour-team{
+	padding-bottom: 75px;
+}
+
+.team-wrap{
+	justify-content: space-between;
+}
+
+.team-member .img-wrap-1{
+	width: 274px;
+	position: relative;
+}
+
+.team-member .img-wrap-2{
+	padding-bottom: 150%;
+}
+
+.team-member__fio{
+  font-size: 20px;
+  color: #11749e;
+  position: absolute;
+  bottom: 39px;
+  background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 24px 45px 10px 45px;
+  white-space: nowrap;
+	font-family: "Gotham-Medium";
+	text-transform: uppercase;
+}
+
+.team-member__position{
+	font-family: "Gotham-Medium";
+	font-size: 15px;
+	line-height: 24px;
+	position: absolute;
+	bottom: 16px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.section-desc{
+	font-size: 30.06px;
+	line-height: 37px;
+	font-family: "Gotham-Book"; 
+	color: #222222;
+}
+
+
