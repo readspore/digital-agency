@@ -7,8 +7,9 @@
 	<link rel="stylesheet" href="./assets/css/normalize.min.css">
 </head>
 <body>
-		<div class="main-screen">
+		<div class="main-screen" id="home" data-page="home">
 			<!-- шапка хедера -->
+			<div id="not-real-header"></div>
 			<header class="top-header" id="top-header-real">
 				<div class="center-wrap d-flex">
 					<div class="top-header__left">
@@ -19,13 +20,13 @@
 					</div>
 					<div class="top-header__right">
 						<nav class="top-header__nav align-cm">
-							<ul class="d-flex">
-								<li><a href="/a" class="top-header__link top-header__link-active">Home</a></li>
-								<li><a href="/b" class="top-header__link">Pages</a></li>
-								<li><a href="/c" class="top-header__link">Features</a></li>
-								<li><a href="/c" class="top-header__link">Extensions</a></li>
-								<li><a href="/c" class="top-header__link">Tutorials</a></li>
-								<li><a href="/d" class="top-header__link">Contact us</a></li>
+							<ul class="d-flex" id="header-nav-menu">
+								<li><a href="#home" class="top-header__link top-header__link-active">Home</a></li>
+								<li><a href="#features" class="top-header__link">Features</a></li>
+								<li><a href="#pages" class="top-header__link">Pages</a></li>
+								<li><a href="#extensions" class="top-header__link">Extensions</a></li>
+								<li><a href="#tutorials" class="top-header__link">Tutorials</a></li>
+								<li><a href="#contact" class="top-header__link">Contact us</a></li>
 							</ul>
 						</nav>
 						<div class="top-header__social align-cm">
@@ -64,7 +65,7 @@
 		</div>
 
 		<main>
-			<div class="section section_feature">
+			<div class="section section_feature" id="features" data-page="features">
 				<div class="center-wrap">
 					<div class="section-title section-title_blue align-cm">
 						<span class="section-title__single-letter">w</span>
@@ -108,7 +109,7 @@
 				</div>
 			</div>
 
-			<div class="section section-text-img">
+			<div class="section section-text-img" id="pages" data-page="pages">
 				<!-- single row start -->
 				<div class="text-img-row d-flex">
 					<div class="center-wrap">
@@ -146,7 +147,7 @@
 				
 				<!-- single row end -->
 			</div>
-			<div class="section_lets-blog">
+			<div class="section_lets-blog" id="extensions" data-page="extensions">
 				<div class="center-wrap">
 					<div class="section-title section-title_grey align-cm">
 						<span class="section-title__single-letter">b</span>
@@ -205,7 +206,7 @@
 			</div>
 
 <!-- section-blue-text -->
-			<div class="section-blue-text">
+			<div class="section-blue-text" id="tutorials" data-page="tutorials">
 				<div class="center-wrap">
 					<div class="blue-blocks-wrapper d-flex">
 						<!-- unit start -->
@@ -318,7 +319,7 @@
 			<!-- section team END-->
 
 			<!-- section contacs -->
-			<div class="section-contacts">
+			<div class="section-contacts" id="contact" data-page="contact">
 				<div class="center-wrap">
 
 					<div class="section-title section-title_grey align-cm">

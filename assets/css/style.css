@@ -190,18 +190,24 @@ li{
 .top-header{
 	border-bottom: 1px solid #7f7f7d;
   padding-top: 20px;
+	position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
 }
 
 .top-header.top-header__fixed{
   background: #0007;
-	position: fixed;
-  width: 100%;
-  left: 0;
-  z-index: 10;
 }
 
 .top-header__left{
 	margin-bottom: 30px;
+}
+
+.top-header.not-real{
+	padding: 0;
+	width: 1px;
 }
 
 .ms-content{
