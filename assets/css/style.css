@@ -200,7 +200,7 @@ li{
 
 .ms-content__main-title h1{
 	margin: 0;
-  font-size: 152.54;
+  font-size: 152.54px;
   color: #f5f5f5;
   text-transform: uppercase;
   font-family: "Gotham-Bold";
@@ -271,6 +271,8 @@ h2{
 	font-size: 37.6px;
 	line-height: 45px;
 	font-family: "Gotham-Medium";
+	text-transform: uppercase;
+	font-weight: 100;
 }
 
 h3{
@@ -467,4 +469,63 @@ p{
 
 .bb-single__icon{
 	margin-right: 30px;
+}
+
+/*about work section*/
+
+.section-about-work{
+	background-image: url(../img/aw-bg_2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position: cover;
+	color: #ffffff;
+	padding: 70px 0;
+}
+
+.section-about-work .center-wrap{
+  justify-content: center;
+  align-items: center;
+}
+
+.aw-content{
+	/*padding: 230px 100px 0 25px;*/
+}
+
+.aw-content__content{
+	max-width: 473px;
+	margin-bottom: 68px;
+}
+
+.aw-content__title{
+	margin-bottom: 42px;
+}
+
+.item_blue-bg{
+	line-height: 38px;
+	background-color: #11749e;
+	padding-left: 20px;
+	margin-bottom: 24px;
+	max-width: 429px;
+}
+
+li.item_blue-bg:nth-child(1){
+	max-width: 370px;
+}
+
+li.item_blue-bg:nth-child(2){
+	max-width: 400px;
+}
+
+.aw-img .img-wrap-1 {
+  position: relative;
+  width: 341px;
+}
+
+.aw-img .img-wrap-2 {
+	padding-bottom: 167%;
+}
+
+.aw-content,
+.aw-img{
+	margin: auto;
 }
