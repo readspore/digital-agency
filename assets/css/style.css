@@ -3,6 +3,7 @@
 *{
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 .d-none{
@@ -579,4 +580,76 @@ li.item_blue-bg:nth-child(2){
 	color: #222222;
 }
 
+/*section contacts*/
 
+.section-contacts{
+	padding-bottom: 100px;
+	background-image: url(../img/contacts-bg.jpg);
+}
+
+.section-title__single-letter_opacity{
+	opacity: 0.23;
+}
+
+.section-title__text_white{
+	color: #fff !important;
+}
+
+button, input, optgroup, select, textarea {
+  background: inherit;
+  border: 1px solid white;
+  padding-left: 20px;
+}
+
+input{
+	width: 370px;
+	line-height: 45px;
+	height: 45px;
+	font-size: 15px;
+	color: #fff;
+}
+
+div textarea{
+	margin-top: 40px;
+	width: 100%;
+	padding: 7px;
+	color: #fff;
+}
+
+.form__top-blocks{
+	justify-content: space-between;
+}
+
+::-webkit-input-placeholder {
+   color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+
+:-ms-input-placeholder {  
+   color: #fff;  
+}
+
+.btn{
+  text-transform: uppercase;
+  background-color: #11749e;
+  border: 0;
+  width: 230px;
+  height: 65px;
+  cursor: pointer;
+
+}
+
+.form__submit{
+  margin-top: 48px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+}
