@@ -451,3 +451,20 @@ p{
 .section_lets-blog{
 	padding-bottom: 110px;
 }
+
+/* blue block */
+
+.section-blue-text{
+	background-color: #11749e;
+	color: white;
+	padding-top: 150px;
+	padding-bottom: 160px;
+}
+
+.bb-single{
+	margin-right: 53px;
+}
+
+.bb-single__icon{
+	margin-right: 30px;
+}
