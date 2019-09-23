@@ -152,7 +152,7 @@ li{
   background-image: url(../img/bg-mains-screen.png);
   padding-top: 20px;
   background-repeat: no-repeat;
-  max-height: 100vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
 }
@@ -184,7 +184,8 @@ li{
 }
 
 .top-header__social-item{
-	margin: 0 10px;
+	padding: 0 7px;
+	margin: 0 3px;;
 }
 
 .top-header{
@@ -196,7 +197,10 @@ li{
 }
 
 .ms-content{
-	/*padding-top: 15%;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: inherit;
 }
 
 .ms-content__main-title h1{
@@ -216,7 +220,7 @@ li{
   line-height: 51.2px;
   letter-spacing: 18px;
   padding-left: 10px;
-  padding-bottom: 100px;
+  /*padding-bottom: 100px;*/
 }
 
 .ms-content-more__text{
@@ -229,11 +233,7 @@ li{
 .ms-content-more{
 	flex-direction: column;
   bottom: 50px;
-  margin-bottom: 104px;
-}
-
-.white-space_274px{
-	height: 119px;
+  /*margin-bottom: 104px;*/
 }
 
 .ms-content-more__btn {
@@ -671,4 +671,9 @@ div textarea{
 	background-color: #222222;
 	justify-content: space-between;
 	color: #f0f0f0;
+}
+
+/*меняю главный экран */
+.main-screen .center-wrap{
+	height: 95%;
 }
