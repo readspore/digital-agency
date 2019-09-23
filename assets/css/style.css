@@ -665,3 +665,10 @@ div textarea{
 .section-map img{
 	object-fit: cover !important;
 }
+
+.site-footer{
+	padding: 57px 220px 45px;
+	background-color: #222222;
+	justify-content: space-between;
+	color: #f0f0f0;
+}
