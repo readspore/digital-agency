@@ -37,10 +37,10 @@ function activeHeaderLink(){
 }
 
 document.addEventListener('DOMContentLoaded', function(){
-  $(window).scroll(function() {
+  // $(window).scroll(function() {
     headerFixed();
     activeHeaderLink();
-  });
+  // });
   initSmothScroll();
 });
 
