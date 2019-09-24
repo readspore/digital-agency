@@ -272,6 +272,20 @@ li{
 	-webkit-transition: all 0.7s ease-in-out;
 }
 
+.top-header__social-item:hover img{
+  transform: scale(1.5);
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+.top-header__social-item:not(:hover) img{
+  transform: scale(1);
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
 .top-header{
 	border-bottom: 1px solid #7f7f7d;
   padding-top: 20px;
