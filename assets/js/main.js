@@ -16,7 +16,12 @@ function headerFixed(){
 function initSmothScroll(){
   $("a[href^='#']").click(function(){
     var _href = $(this).attr("href");
-    $("html, body").animate({scrollTop: $(_href).offset().top-HEADER_HEIGHT+1+"px"});
+    var addHeight = _href == '#features' ? 54 : 0;
+    $("html, body").animate({
+      scrollTop: $(_href)
+                  .offset()
+                  .top - document.querySelector('#top-header-real').clientHeight+addHeight+4+"px"
+    });
     return false;
   });
 }
@@ -36,12 +41,20 @@ function activeHeaderLink(){
   });
 }
 
+
+
 document.addEventListener('DOMContentLoaded', function(){
-  $(window).scroll(function() {
+  $(window).scroll(function(e) {
     headerFixed();
     activeHeaderLink();
   });
   initSmothScroll();
+  $('#home').bind('mousewheel', function(e) {
+      if(e.originalEvent.wheelDelta / 120 < 0) {
+        e.preventDefault();
+        $('#header-nav-menu > li:nth-child(2) > a').click();
+      }
+  });
 });
 
 initNotrealHeaderHeight();
