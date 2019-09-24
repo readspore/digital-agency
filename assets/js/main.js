@@ -1,4 +1,10 @@
 const HEADER_HEIGHT = document.querySelector('#top-header-real').clientHeight;
+window.needTypingEffect = [
+                            'typing-pages-header__1',
+                            'typing-pages-header__2',
+                            'typing-pages-header__3',
+                            'typing-pages-header__4'
+                          ];
 
 function initNotrealHeaderHeight(){
   document.querySelector('#not-real-header')
@@ -15,15 +21,28 @@ function headerFixed(){
 
 function initSmothScroll(){
   $("a[href^='#']").click(function(){
-    var _href = $(this).attr("href");
-    var addHeight = _href == '#features' ? 54 : 0;
-    $("html, body").animate({
-      scrollTop: $(_href)
-                  .offset()
-                  .top - document.querySelector('#top-header-real').clientHeight+addHeight+4+"px"
-    });
+    rs_smothScroll($(this).attr("href"));
     return false;
   });
+}
+
+function rs_smothScroll(_href){
+  console.log();
+  var addHeight = _href == '#features' ? 54 : 0;
+  $("html, body").animate({
+    scrollTop: $(_href)
+                .offset()
+                .top - document.querySelector('#top-header-real').clientHeight+addHeight+4+"px"
+  });
+}
+
+function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
 function activeHeaderLink(){
@@ -41,20 +60,33 @@ function activeHeaderLink(){
   });
 }
 
+function mainScreenScroll(){
+  $('#home').bind('mousewheel', function(e) {
+      e.preventDefault();
+      if(e.originalEvent.wheelDelta / 120 < 0) {
+        $('#header-nav-menu > li:nth-child(2) > a').click();
+      } else {
+        $('#header-nav-menu > li:nth-child(1) > a').click();
+      }
+  });
+}
 
+function typingTextEffect(){
+  window.needTypingEffect.forEach((itemId,key)=>{
+    if (isScrolledIntoView('#'+itemId)) $('#'+itemId).addClass('text-typing');
+  });
+}
 
 document.addEventListener('DOMContentLoaded', function(){
   $(window).scroll(function(e) {
     headerFixed();
+    typingTextEffect();
     activeHeaderLink();
   });
   initSmothScroll();
-  $('#home').bind('mousewheel', function(e) {
-      if(e.originalEvent.wheelDelta / 120 < 0) {
-        e.preventDefault();
-        $('#header-nav-menu > li:nth-child(2) > a').click();
-      }
-  });
+  typingTextEffect();
+  mainScreenScroll();
+  headerFixed();
 });
 
 initNotrealHeaderHeight();

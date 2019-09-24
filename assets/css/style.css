@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+body,
+html{
+	overflow-x: hidden;
+}
+
 .d-none{
 	display: none !important;
 }
@@ -529,6 +534,12 @@ p{
 	width: 140px;
 	border-radius: 50%;
 	background-color: #2e85aa;
+	transition: 1s;
+}
+
+.feature__img:hover{
+	transform: scale(1.24);
+	transition: 1s;
 }
 
 .feature__text{
@@ -835,7 +846,13 @@ div textarea{
   width: 230px;
   height: 65px;
   cursor: pointer;
+	transition: 0.5s;
+}
 
+.btn:hover{
+  background-color: #0ea2e0;
+	letter-spacing: 3px;
+	transition: 0.5s;
 }
 
 .form__submit{
@@ -1128,10 +1145,6 @@ div textarea{
 }
 
 @media screen and (max-width: 340px){
-	body,
-	html{
-  	overflow-x: hidden;
-	}
 	.ms-content__main-title h1 {
 	  font-size: 58px;
 	  letter-spacing: -4px;
@@ -1159,5 +1172,22 @@ div textarea{
 	.site-footer p{
     text-align: center;
 	}
+}
+
+.text-typing
+{
+    width: 100%;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 2.5s steps(50, end);
+    animation: type 2.5s steps(50, end);
+    max-width: fit-content;
+}
+@keyframes type{
+    from { width: 0; }
+}
+ 
+@-webkit-keyframes type{
+    from { width: 0; }
 }
 
