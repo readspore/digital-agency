@@ -1,5 +1,3 @@
-/* нужно везде начало */
-
 *{
 	padding: 0;
 	margin: 0;
@@ -768,13 +766,14 @@ div textarea{
     letter-spacing: 1px;
     line-height: 27px;
 	}
-	.blog__title {
-			margin-top: -92%;
-	}
 	.ms-content__main-title h1{
 		font-size: 77.54px;
 	}
+	.blog__title {
+			margin-top: -92%;
+	}
 	.ms-content__sub-title h2 {
+		display: block;
 		font-size: 32.8px;
 		letter-spacing: 13px;
 	}
@@ -827,7 +826,7 @@ div textarea{
 		max-width: none; 
 	}
 	.blog__item .img-wrap-1 {
-		width: 350px;
+		width: 260px;
 	}
 	.blue-blocks-wrapper{
 		flex-direction: column;
@@ -888,4 +887,98 @@ div textarea{
   .section-map .img-wrap-1{
   	height: 155px;
   }
+  /*370*/
+
 }
+
+
+@media screen and (max-width: 430px){
+	header{
+		display: none;
+	}
+	.main-screen {
+	  display: -webkit-box;
+	  width: 100%;
+	}
+	.ms-content__main-title h1 {
+    font-size: 63px;
+    letter-spacing: -4px;
+	}
+	.ms-content__sub-title h2 {
+	  font-size: 14.8px;
+	  letter-spacing: 10px;
+	  line-height: 28px;
+    padding: 0;
+	}
+	.ms-content-more__text {
+	  font-size: 25px;
+	  padding-bottom: 20px;
+	}
+	.ms-content-more__btn {
+	  width: 60px;
+	  height: 60px;
+	}
+	h2 {
+	  font-size: 20px;
+	}
+	p,
+	h2,
+	h3{
+	  font-size: initial;
+
+	}
+	.section-title__single-letter {
+	  font-size: 147px;
+	}
+	main ~ .section{
+	padding: 0 5px;
+	}
+	.text-block__date {
+	  font-size: 20px;
+	}
+	.text-block__title {
+	  font-size: initial;
+	}
+	.section-desc {
+	  font-size: 20.06px;
+	  line-height: 35px;
+	}
+	.section-title__text{
+		line-height: initial;
+	}
+}
+
+@media screen and (max-width: 340px){
+	body,
+	html{
+  	overflow-x: hidden;
+	}
+.ms-content__main-title h1 {
+    font-size: 58px;
+    letter-spacing: -4px;
+    padding: 0;
+    margin-right: 3px;
+}	
+.section_feature {
+    padding-top: 0;
+}
+.feature__text{
+	min-width: 100%;
+}
+.blog__title {
+    margin-top: -120%;
+}
+.team-member .img-wrap-1 {
+    width: 235px;
+}
+.team-member__fio{
+	bottom: 30px;
+}
+.section-contacts {
+    padding-bottom: 45px;
+}
+.site-footer p{
+	    text-align: center;
+}
+}
+
