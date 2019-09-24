@@ -177,21 +177,70 @@ li{
 	-moz-transition: all 0.7s ease-in-out;
 	-o-transition: all 0.7s ease-in-out;
 	-webkit-transition: all 0.7s ease-in-out;
-
 }
 
-.top-header__link-active::after {
+.top-header__link.top-header__link-active:hover::after{
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-name: active-nav-link;
+}
+
+.top-header__link:hover::after{
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-name: not-active-nav-link;
+}
+
+@keyframes active-nav-link {
+  from {
+	  background-color: #a6a9aae0;
+	  width: 0%;
+  }
+
+  to {
+	  background-color: #fff;
+    width: 100%;
+  }
+}
+
+@keyframes not-active-nav-link {
+  from {
+	  background-color: #11749e;
+  	height: 10px;
+	  width: 0%;
+  }
+
+  to {
+	  background-color: #11749e;
+  	height: 10px;
+    width: 100%;
+  }
+}
+
+
+.top-header__link::after,
+.top-header__link::before
+{
   content: "";
-  height: 10px;
+  height: 0px;
   width: 100%;
   display: inline-block;
   background-color: #11749e;
   position: absolute;
   margin-top: 49px;
   left: 0;
+  z-index: 2;
 	-moz-transition: all 0.7s ease-in-out;
 	-o-transition: all 0.7s ease-in-out;
 	-webkit-transition: all 0.7s ease-in-out;
+}
+
+.top-header__link-active::after,
+.top-header__link-active::before
+{
+  height: 10px;
 }
 
 .top-header__nav{
@@ -199,7 +248,6 @@ li{
 	-moz-transition: all 0.7s ease-in-out;
 	-o-transition: all 0.7s ease-in-out;
 	-webkit-transition: all 0.7s ease-in-out;
-
 }
 
 .top-header__right{
@@ -216,7 +264,6 @@ li{
 	-moz-transition: all 0.7s ease-in-out;
 	-o-transition: all 0.7s ease-in-out;
 	-webkit-transition: all 0.7s ease-in-out;
-
 }
 
 .top-header{
@@ -253,12 +300,20 @@ li{
 	-webkit-transition: all 0.7s ease-in-out;
 }
 
-.top-header__fixed .top-header__link-active::after{
+.top-header__fixed .top-header__link-active::after,
+.top-header__fixed .top-header__link-active::before,
+.top-header__fixed .top-header__link::after,
+.top-header__fixed .top-header__link::before{
   height: 6px;
   margin-top: 34px;
 	-moz-transition: all 0.7s ease-in-out;
 	-o-transition: all 0.7s ease-in-out;
 	-webkit-transition: all 0.7s ease-in-out;
+}
+
+.top-header__fixed .top-header__link::after,
+.top-header__fixed .top-header__link::before{
+  height: 0px;
 }
 
 .top-header__fixed .top-header__rect-bg{
