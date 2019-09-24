@@ -1127,12 +1127,12 @@ div textarea{
     padding: 0;
 	}
 	.ms-content-more__text {
-	  font-size: 25px;
-	  padding-bottom: 20px;
+	  font-size: 15px;
+	  padding-bottom: 15px;
 	}
 	.ms-content-more__btn {
-	  width: 60px;
-	  height: 60px;
+		width: 55px;
+    height: 55px;
 	}
 	h2 {
 	  font-size: 20px;
@@ -1351,3 +1351,6 @@ width: 35px;
     font-size: 27px;
     color: black;
   }
+ .some-wrap{
+ 	display: none;
+ }

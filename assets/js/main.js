@@ -63,15 +63,15 @@ function activeHeaderLink(){
 }
 
 function mainScreenScroll(){
-  $('#home').bind('mousewheel', function(e) {
-      e.preventDefault();
-      if ($('.header_mobile_active').length != 0) return;
-      if(e.originalEvent.wheelDelta / 120 < 0) {
-        $('#header-nav-menu > li:nth-child(2) > a').click();
-      } else {
-        $('#header-nav-menu > li:nth-child(1) > a').click();
-      }
-  });
+  // $('#home').bind('mousewheel', function(e) {
+  //     e.preventDefault();
+  //     if ($('.header_mobile_active').length != 0) return;
+  //     if(e.originalEvent.wheelDelta / 120 < 0) {
+  //       $('#header-nav-menu > li:nth-child(2) > a').click();
+  //     } else {
+  //       $('#header-nav-menu > li:nth-child(1) > a').click();
+  //     }
+  // });
 
   $('#top-header-real').bind('mousewheel', function(e) {
         e.preventDefault();
